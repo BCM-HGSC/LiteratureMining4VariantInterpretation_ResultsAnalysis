@@ -1,0 +1,9 @@
+# macOS cruft
+.DS_Store
+
+# Local inputs and outputs (generated on your machine)
+input/*.xls*
+output/
+
+# Plot artifacts
+*.png
