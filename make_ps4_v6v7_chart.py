@@ -145,8 +145,9 @@ def plot_ps4_v6_v7_bar(
             color="white",
             fontweight="bold",
         )
-
-    ax.set_ylabel("Publications Matching Truth (%)", fontsize=12)
+    ax.set_title("A. Task 2 (PS4 case count) model performance - v6 -> v7 comparison ",
+                 fontsize=18, pad=15)
+    ax.set_ylabel("Agreement with truth-set (%)", fontsize=12)
     ax.set_xticks(x, labels, rotation=30, ha="right")
 
     ax.set_ylim(0, 110)

@@ -81,8 +81,8 @@ def make_leaderboard():
             fontweight="bold"
         )
 
-    ax.set_xlabel("PS4 Count Extraction Accuracy (%)", fontsize=14)
-    ax.set_title("PS4 Count Extraction – v7 Model Leaderboard\n(N = 281 publications)",
+    ax.set_xlabel("PS4 case count - Concordance with truth-set (%)", fontsize=14)
+    ax.set_title("A. PS4 case count – Model Leaderboard",
                  fontsize=18, pad=15)
 
     ax.set_xlim(0, 100)
@@ -142,7 +142,7 @@ def make_heatmap():
             ax.text(j + 0.5, i + 0.5, text,
                     ha="center", va="center", fontsize=10)
 
-    plt.title("PS4 v7: Pairwise McNemar (Raw p-values) + Effect Size",
+    plt.title("C. PS4 case count: Paired McNemar p-value + Cohen's g Effect Size",
               fontsize=16, pad=20)
     plt.xlabel("Model B", fontsize=13)
     plt.ylabel("Model A", fontsize=13)

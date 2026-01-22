@@ -160,11 +160,11 @@ def make_figure_A(df: pd.DataFrame):
     ax.set_xticklabels(xticklabels, rotation=25, ha="right", fontsize=10)
 
     ax.set_ylim(0, max(100, np.max(hi_pct) + 5))
-    ax.set_ylabel("Variant-detection accuracy vs truth (%)", fontsize=11)
+    ax.set_ylabel("Agreement with truth-set (%)", fontsize=11)
 
     ax.set_title(
-        "Model Outcomes vs Ground Truth (Variant Detection, v7)\n"
-        f"(N = {int(N[0])} publications)",
+        "A. Task 1 (Variant Detection): Model outcomes vs truth-set\n"
+        f"(N = {int(N[0])} publication-variant pairs)",
         fontsize=13,
         pad=12,
     )
@@ -313,11 +313,10 @@ def make_figure_B(df_pw: pd.DataFrame):
     ax.set_xticklabels(xticklabels, rotation=25, ha="right", fontsize=9)
     ax.set_yticklabels(yticklabels, fontsize=9)
 
-    ax.set_xlabel("Model B", fontsize=11)
+    ax.set_xlabel("Model B\nGreen: row better, Red: column better", fontsize=11)
     ax.set_ylabel("Model A", fontsize=11)
     ax.set_title(
-        "v7 Variant-detection: Pairwise McNemar (raw p-values)\n"
-        "Green: row better, Red: column better",
+        "Task 1 (Variant Detection): v7 Paired McNemar & Cohen's g",
         fontsize=12,
         pad=10,
     )

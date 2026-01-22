@@ -152,7 +152,7 @@ def build_error_heatmap(df: pd.DataFrame, outpath: Path):
                 ax.text(j, i, str(v), ha="center", va="center", color=txt_color, fontsize=10)
 
     plt.colorbar(im, ax=ax, label="Count")
-    ax.set_title("Comparative Model Error Distribution", fontsize=14, pad=12)
+    ax.set_title("B. PS4 case count - comparative model error distribution", fontsize=14, pad=12)
 
     outpath.parent.mkdir(parents=True, exist_ok=True)
     plt.tight_layout()
